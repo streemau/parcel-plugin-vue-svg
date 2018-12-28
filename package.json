@@ -1,0 +1,14 @@
+{
+  "name": "parcel-plugin-vue-svg",
+  "version": "0.0.1",
+  "description": "Parcel plugin for rendering SVGs in VueJS as components",
+  "main": "index.js",
+  "repository": "https://github.com/streemau/parcel-plugin-vue-svg",
+  "author": "Tim Flapper <tim.flapper@streem.com.au>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "parcel-bundler": "^1.11.0",
+    "svgo": "^1.1.1"
+  }
+}

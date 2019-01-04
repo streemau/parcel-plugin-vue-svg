@@ -12,7 +12,7 @@ class VueSvgAsset extends Asset {
 
     const optimizedSvg = await svgo.optimize(str);
 
-    this.code = optimizedSvg.data;
+    this.code = Buffer.from(optimizedSvg.data).toString('base64');
   }
 
   render() {
@@ -20,9 +20,9 @@ class VueSvgAsset extends Asset {
       module.exports = {
         functional: true,
         render(createElement) {
-          return createElement('div', {
-            domProps: {
-              innerHTML: '${this.code}',
+          return createElement('img', {
+            attrs: {
+              src: 'data:image/svg+xml;base64,${this.code}'
             },
           });
         }

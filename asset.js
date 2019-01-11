@@ -19,7 +19,7 @@ class VueSvgAsset extends Asset {
     return `
       module.exports = {
         functional: true,
-        render(createElement) {
+        render: function(createElement) {
           return createElement('img', {
             attrs: {
               src: 'data:image/svg+xml;base64,${this.code}'

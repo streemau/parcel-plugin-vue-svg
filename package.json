@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "parcel-bundler": "^1.11.0",
-    "svgo": "^1.1.1"
+    "parcel-bundler": "^1.12.3",
+    "svgo": "^1.3.0"
   }
 }
